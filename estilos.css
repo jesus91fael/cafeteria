@@ -1,0 +1,241 @@
+/*
+font-family: 'Fraunces', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+Paleta de cores utilizada na página da cafeteria.
+#c4a47c
+#fff
+#000000
+#604829
+#666
+#ACACAC
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces";
+}
+
+.container-topo{
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: #604829;
+}
+
+.logo{
+  width: 60px;
+}
+
+.menu{}
+
+.menu a{
+  margin: 0 15px;
+  text-decoration: none;
+  color: #c4a47c;
+  text-shadow: 0.2em 0.2em 0.2em black;
+  font-size: 22px;
+}
+
+.container-parallax1,
+.container-parallax2,
+.container-parallax3,
+.container-parallax4 {
+   position: relative;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.container-banner {
+  height: 100vh;
+  background-image: url("assets/parallax-imagem1.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.container-banner h1{
+  position: absolute;
+  top: 50%;
+  font-size: 64px;
+  color:#fff;
+  margin-left: 40px;
+  
+}
+
+.container-texto {
+  padding: 80px 80px;
+  font-size: 16px;
+  line-height: 34px;
+  text-align: center;
+  color: #666;
+}
+
+.container-texto h2{
+  color:#c4a47c;
+  margin-bottom: 20px;
+}
+
+.container-parallax2 {
+  background-image: url("assets/parallax-imagem2.jpg");
+  height: 100vh;
+}
+
+.container-parallax2 h3{
+  position: absolute;
+  top: 50%;
+  font-size: 22px;
+  font-style: italic;
+  color:#fff;
+  margin-left: 25%;
+  background-color: #604829;
+  padding: 10px;
+}
+
+.container-parallax3 {
+  background-image: url("assets/parallax-imagem3.jpg");
+  height: 100vh;
+}
+
+.container-parallax3 h3{
+  position: absolute;
+  top: 50%;
+  font-size: 22px;
+  font-style: italic;
+  color:#fff;
+  margin-left: 25%;
+  background-color: #604829;
+  padding: 10px;
+}
+
+.container-parallax4 {
+
+  padding: 30px 0;
+  background-image: url("assets/parallax-imagem4.png");
+  height: 100vh;
+  text-align: center;
+}
+
+.container-parallax4 h2{
+  margin: 10px auto;
+  width: 30%;
+  font-size: 22px;
+  color:#fff;  
+  background-color: #604829;
+  padding: 10px;
+}
+
+.box-contatos{
+  margin: 10px auto;
+  width: 40%;
+  background-color: #604829;
+  padding: 10px;
+  color:#fff;
+}
+
+.box-contatos p{
+  text-shadow: 0.2em 0.2em 0.2em black;
+  font-size: 16px;
+  text-align: center;
+  line-height: 32px
+}
+
+.container-horarios{
+  background-image: url("assets/cafeteria.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  position: relative;
+  text-align: center;
+  color:#fff;  
+  padding: 30px 0;
+
+}
+
+.container-horarios h2{
+  width: 30%;
+  margin: 40px auto;
+  top: 10%;
+  font-size: 22px;
+}
+
+.lista{
+  width:50%;
+  text-align: center;
+  margin:30px auto;
+  
+}
+
+.lista li { /* itens da lista */
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-between;
+  align-items: center;
+  
+}
+
+.lista li div { /* tarja */
+  position: absolutes;
+
+  min-width: 50%;
+  height: 1px;
+  right: 0;
+  left: 0;
+  bottom: 50%;
+  background-color: #acacac
+}
+
+.lista li h3 { /* parágrafos */
+  width: 20%;
+}
+
+.lista li p { /* parágrafos */
+  position: absolutes;
+  width: 20%;
+
+  top: 0;
+  right: 0;
+}
+
+.lista li span { /* parágrafos */
+  width: 20%;
+  top: 0;
+  right: 0;
+  color: #c4a47c;
+  font-weight: bold;
+}
+
+
+
+
+.container-rodape {
+  position: relative;
+  background-color:#000000;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 30px 0;
+}
+
+.container-rodape a {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 50px;
+  bottom: 80px;
+}
